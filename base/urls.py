@@ -7,6 +7,7 @@ urlpatterns = [
      path('', TaskList.as_view(), name='tasks'),
      path('task/<int:pk>/', TaskDetail.as_view(), name ='task'),  # looks for pk ,pk = primary value
      path('task-create/', TaskCreate.as_view(), name='task-create'),
+     
 ]
 
 
